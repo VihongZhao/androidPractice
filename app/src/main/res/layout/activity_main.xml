@@ -6,35 +6,38 @@
     android:layout_height="match_parent"
     tools:context="com.example.weihong.practice.MainActivity">
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/edit_website"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:ems="10"
-        android:hint="@string/edit_website"
+        android:text="@string/edit_website"
+        android:imeOptions="actionDone"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/button_get"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:text="@string/button_get"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText3"
-        app:layout_constraintStart_toEndOf="@+id/editText3" />
+        app:layout_constraintBaseline_toBaselineOf="@id/edit_website"
+        app:layout_constraintStart_toEndOf="@id/edit_website" />
 
     <TextView
-        android:id="@+id/textView4"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:id="@+id/html_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:scrollbars="vertical"
+        android:maxLines="20"
         android:hint="@string/text_hint"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@id/edit_website"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>
